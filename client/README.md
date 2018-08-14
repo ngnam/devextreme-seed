@@ -32,9 +32,14 @@ import { DxFormModule } from 'devextreme-angular';
 - Có validate các trường Tên, Giới tính
 - Save Data dưới dạng json xuống localstoged
 
-### 3. Sử dụng NOtifications,
+### 3. Sử dụng Notifications,
+```
+  import notify from 'devextreme/ui/notify';
+```
+- Sử dụng notify hiện thị thông báo khi thêm mới một person
 
 ### 4. Sử dụng Dialogs
+- Hiện thi dialog confirm khi muốn xóa 1 person.
 
 
 
