@@ -32,6 +32,10 @@ import { DxFormModule } from 'devextreme-angular';
 - Có validate các trường Tên, Giới tính
 - Save Data dưới dạng json xuống localstoged
 
-### xxx
+### 3. Sử dụng NOtifications,
+
+### 4. Sử dụng Dialogs
+
+
 
 
