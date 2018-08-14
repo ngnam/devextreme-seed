@@ -81,4 +81,6 @@ Bài tập: Tạo mới một feature Module UsersModule
 ### 5. Làm việc với api dotnetcore, express nodejs, hoặc firebase
 - Bài tập nâng cao.
 
+### 6. Làm với với @ngrx/XXX, cấu trúc redux trong ứng dụng Client Angular.
+- Bài tập nâng cao.
 
