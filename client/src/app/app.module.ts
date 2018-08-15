@@ -1,23 +1,27 @@
-import { AnalyticsModule } from './framework/analytics/analytics.module';
+// libs
 import { ANGULARTICS2_TOKEN } from 'angulartics2';
 import { Angulartics2GoogleAnalytics } from 'angulartics2/ga';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { I18NModule, translateFactory, ChangeLanguageComponent } from './framework/i18n/i18n.module';
-import { MaterialModule } from './framework/material/material.module';
-import { HttpInterceptorModule } from './framework/http/http-interceptor.module';
-import { SharedModule } from './framework/core/shared.module';
 import { TranslateService, TranslateLoader } from '@ngx-translate/core';
 import { MetaLoader } from '@ngx-meta/core';
 import { ConfigLoader, ConfigService } from '@ngx-config/core';
 import { BrowserModule, makeStateKey } from '@angular/platform-browser';
 import { NgModule, Injector } from '@angular/core';
-
-import { AppComponent } from './app.component';
 import { RouterModule, Routes } from '@angular/router';
 import { MainComponent } from './layout/main.component';
 import { TransferHttpCacheModule } from '@nguniversal/common';
 import { PERFECT_SCROLLBAR_CONFIG, PerfectScrollbarConfigInterface, PerfectScrollbarModule } from 'ngx-perfect-scrollbar';
+
+// framework
+import { MaterialModule } from './framework/material/material.module';
+import { HttpInterceptorModule } from './framework/http/http-interceptor.module';
+import { SharedModule } from './framework/core/shared.module';
 import { CoreModule, configFactory, metaFactory } from './framework/core/core.module';
+import { AnalyticsModule } from './framework/analytics/analytics.module';
+
+// app
+import { AppComponent } from './app.component';
 import { HeaderComponent } from './layout/header.component';
 
 export const REQ_KEY = makeStateKey<string>('req');

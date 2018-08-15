@@ -47,6 +47,7 @@ export function authFactory(): AuthLoader {
 
 @NgModule({
   imports: [
+    BrowserTransferStateModule,
     BrowserAnimationsModule,
     BrowserCacheModule.forRoot([
       {
@@ -68,7 +69,7 @@ export function authFactory(): AuthLoader {
     AppModule,
     AuthModule.forRoot({
       provide: AuthLoader,
-      useFactory: authFactory
+      useFactory: (authFactory)
     })
   ],
   providers: [
